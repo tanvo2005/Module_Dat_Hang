@@ -118,13 +118,13 @@
 
                                 <ul class="header__navbar-user-menu">
                                     <li class="header__navbar-user-menu-item">
-                                        <a href="">Tài khoản của tôi</a>
+                                        <a href="#">Tài khoản của tôi</a>
                                     </li>
                                     <li class="header__navbar-user-menu-item">
-                                        <a href="">Địa chỉ của tôi</a>
+                                        <a href="#">Địa chỉ của tôi</a>
                                     </li>
                                     <li class="header__navbar-user-menu-item">
-                                        <a href="">Đơn mua</a>
+                                        <a href="{{route('myOrder')}}">Đơn mua</a>
                                     </li>
                                     <li class="header__navbar-user-menu-item header__navbar-user-menu-item--separate">
                                         <a href="{{ route('logout')}}">Đăng xuất</a>

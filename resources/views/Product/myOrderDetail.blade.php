@@ -37,7 +37,17 @@
                     </div>
                     <div class="myorder_Content_productShipper_status">
                         <span class="myorder_Content_productShipperName">MÃ ĐƠN HÀNG : {{ $order->order_id }}</span>
-                        <span class="myorder_Content_productShipper_Commet" style="font-weight: 500; padding-left: 10px">ĐƠN HÀNG ĐÃ HOÀNG THÀNH</span>
+                        <span class="myorder_Content_productShipper_Commet" style="font-weight: 500; padding-left: 10px">
+                            @if($order->status == 0)
+                                ĐƠN HÀNG ĐANG CHỜ XỬ LÍ
+                            @elseif($order->status == 1)
+                                ĐƠN HÀNG ĐANG ĐƯỢC CHỦNG BỊ
+                            @elseif($order->status == 2)
+                                ĐƠN HÀNG ĐANG GIAO
+                            @else
+                                ĐƠN HÀNG ĐÃ HOÀNG THÀNH 
+                            @endif
+                        </span>
                     </div>
                 </div>
 

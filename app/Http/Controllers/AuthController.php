@@ -28,10 +28,34 @@ class AuthController extends Controller
         return redirect()->route('index')->with('message','Đăng kí thành công! ');
     }
 
-    public function postLogin(PostRequest $register){
-        $dangNhap = $register->only('email', 'password');
+    // public function postLogin(PostRequest $register){
+    //     $dangNhap = $register->only('email', 'password');
+    //     if(Auth::attempt($dangNhap)){
+    //         $register->session()->regenerate();
+    //         return redirect()->intended('/');
+    //     }
+
+    //     return back()->withErrors(['password'=>'Mật khẩu không đúng']);
+    // }
+
+    public function postLogin(PostRequest $request){ // Đổi tên biến $register thành $request
+        $dangNhap = $request->only('email', 'password');
+        
         if(Auth::attempt($dangNhap)){
-            $register->session()->regenerate();
+            $request->session()->regenerate();
+
+            // 1. Lấy người dùng vừa đăng nhập
+            $user = Auth::user();
+
+            // 2. Kiểm tra vai trò (rolename)
+            // (Đảm bảo Model User của bạn đã có hàm roles() như bước trước)
+            if ($user->roles()->where('rolename', 'manager')->exists()) {
+                
+                // 3. Nếu là Admin -> Chuyển đến trang duyệt đơn
+                return redirect()->route('manager.orders.index');
+            }
+            
+            // 4. Nếu là người dùng thường -> Chuyển về trang chủ
             return redirect()->intended('/');
         }
 

@@ -43,6 +43,6 @@ class User extends Authenticatable
     public function roles()
     {
         //nhiều User thuộc nhiều Role thông qua bảng 'userroles'
-        return $this->belongsToMany(Role::class, 'userroles', 'user_id', 'role_id');
+        return $this->belongsToMany(Role::class, 'userroles', 'user_id', 'role_id', 'id','role_id');
     }
 }

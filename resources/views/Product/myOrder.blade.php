@@ -50,7 +50,17 @@
                             <div class="myorder_Content_productShipper">
                         <div class="myorder_Content_productShipper_status">
                             <i class="myorder_Content_productShippericon fa-solid fa-car-side"></i>
-                            <span class="myorder_Content_productShipperName">Giao hàng thành công</span>
+                            <span class="myorder_Content_productShipperName">
+                                @if($order->status == 0)
+                                    Chờ xử lý
+                                @elseif($order->status == 1)
+                                    Đang chủng bị hàng
+                                @elseif($order->status == 2)
+                                    Đang giao
+                                @else
+                                    Giao hàng thành công
+                                @endif
+                            </span>
                         </div>
 
                         <span class="myorder_Content_productShipper_Commet">ĐÁNH GIÁ</span>
@@ -95,8 +105,10 @@
 
                             <div class="myorder_Content_productPayBill_btn">
                                 <a href="{{ route('myOrderDetail', $order->order_id) }}"><button class="btn btn--primary myorder_Content_productPayBill_btnNew"> Xem chi tiết</button></a>
-                                <button class="btn btn--primary myorder_Content_productPayBill_btnNew"> Mua lại</button>
-                                <button class="btn btn--primary myorder_Content_productPayBill_btnNew"> Liên hệ người bán</button>
+                                @if ($order->status == 3)
+                                    <button class="btn btn--primary myorder_Content_productPayBill_btnNew"> Mua lại</button>
+                                    <button class="btn btn--primary myorder_Content_productPayBill_btnNew"> Liên hệ người bán</button>
+                                @endif
                             </div>
                         </div>
 

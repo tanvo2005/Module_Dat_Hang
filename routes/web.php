@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\DatHangController;
+use App\Http\Controllers\ManagerController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use Faker\Guesser\Name;
@@ -48,5 +49,11 @@ Route::middleware('auth')->group(function () {
     Route::post('/cart/add', [CartController::class, 'add'])->name('cart.add');
     Route::patch('/cart/update/{cartDetailId}', [CartController::class, 'update'])->name('cart.update');
     Route::delete('/cart/remove/{cartDetailId}', [CartController::class, 'remove'])->name('cart.remove');
+});
+
+// duyệt đơn hàng
+Route::middleware(['auth', 'kiemTraManager'])->prefix('manager')->name('manager.')->group(function () {
+    Route::get('/orders', [ManagerController::class, 'listOrders'])->name('orders.index');
+    Route::patch('/orders/{id}/update', [ManagerController::class, 'updateOrderStatus'])->name('orders.updateStatus');
 });
 
