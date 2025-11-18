@@ -41,7 +41,7 @@
                             @if($order->status == 0)
                                 ĐƠN HÀNG ĐANG CHỜ XỬ LÍ
                             @elseif($order->status == 1)
-                                ĐƠN HÀNG ĐANG ĐƯỢC CHỦNG BỊ
+                                ĐƠN HÀNG ĐANG ĐƯỢC CHUẨN BỊ
                             @elseif($order->status == 2)
                                 ĐƠN HÀNG ĐANG GIAO
                             @else

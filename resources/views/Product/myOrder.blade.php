@@ -54,7 +54,7 @@
                                 @if($order->status == 0)
                                     Chờ xử lý
                                 @elseif($order->status == 1)
-                                    Đang chủng bị hàng
+                                    Đang chuẩn bị hàng
                                 @elseif($order->status == 2)
                                     Đang giao
                                 @else

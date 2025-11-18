@@ -5,7 +5,7 @@
     <p>Tổng cộng có {{ $orders->total() }} đơn hàng.</p>
 
     <div class="table-responsive">
-        <table class="table table-striped table-hover table-bordered">
+        <table class="table table-hover table-bordered">
             <thead class="table-dark">
                 <tr>
                     <th>ID Đơn</th>
@@ -27,7 +27,7 @@
                             @if($order->status == 0)
                                 <span class="badge bg-warning text-dark">Chờ xử lý</span>
                             @elseif($order->status == 1)
-                                <span class="badge bg-info text-dark">Đang chủng bị hàng</span>
+                                <span class="badge bg-info text-dark">Đang chuẩn bị hàng</span>
                             @elseif($order->status == 2)
                                 <span class="badge bg-primary">Đang giao hàng</span> 
                             @else
