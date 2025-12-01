@@ -56,7 +56,6 @@ class AuthController extends Controller
             $user = Auth::user();
 
             // 2. Kiểm tra vai trò (rolename)
-            // (Đảm bảo Model User của bạn đã có hàm roles() như bước trước)
             if ($user->roles()->where('rolename', 'manager')->exists()) {
                 
                 // 3. Nếu là Admin -> Chuyển đến trang duyệt đơn
