@@ -22,7 +22,7 @@ class DatHangController extends Controller
     public function myOrderDetail(string $id)
     {
         $user = Auth::user();
-        
+
         //lấy chi tiết đơn hàng Order
         //tìm theo 'order_id'
         //đảm bảo nó thuộc về 'user_id'
@@ -42,7 +42,7 @@ class DatHangController extends Controller
         }
 
         //tính toán tổng tiền
-        $total = $cart->details->sum(function($detail) {
+        $total = $cart->details->sum(function ($detail) {
             return $detail->quantity * $detail->unitprice;
         });
 
@@ -107,7 +107,6 @@ class DatHangController extends Controller
             //nếu thành công
             DB::commit();
             return redirect()->route('order.success')->with('success', 'Đặt hàng thành công!');
-
         } catch (\Exception $e) {
             DB::rollBack();
             return redirect()->back()->with('error', 'Đã xảy ra lỗi. Vui lòng thử lại. Lỗi: ' . $e->getMessage());
@@ -117,5 +116,38 @@ class DatHangController extends Controller
     public function showSuccess()
     {
         return view('Product.orderSuccessfully');
+    }
+
+    public function cancelOrder($id)
+    {
+        $user = Auth::user();
+        $order = Order::where('order_id', $id)
+            ->where('user_id', $user->id)
+            ->with('details.variant')
+            ->first();
+
+        if (!$order) {
+            return redirect()->back()->with('error', 'Đơn hàng không tồn tại hoặc bạn không có quyền truy cập.');
+        }
+        if ($order->status != 0) {
+            return redirect()->back()->with('error', 'Đơn hàng đã được xử lý, không thể hủy lúc này.');
+        }
+        DB::beginTransaction();
+        try {
+            foreach ($order->details as $detail) {
+                if ($detail->variant) {
+                    $detail->variant->increment('quantity', $detail->quantity);
+                }
+            }
+            $order->status = 4;
+            $order->save();
+
+            DB::commit(); // Lưu thay đổi
+
+            return redirect()->back()->with('success', 'Đã hủy đơn hàng thành công.');
+        } catch (\Exception $e) {
+            DB::rollBack(); // Hoàn tác nếu có lỗi
+            return redirect()->back()->with('error', 'Lỗi hệ thống: ' . $e->getMessage());
+        }
     }
 }

@@ -44,8 +44,10 @@
                                 ĐƠN HÀNG ĐANG ĐƯỢC CHUẨN BỊ
                             @elseif($order->status == 2)
                                 ĐƠN HÀNG ĐANG GIAO
-                            @else
+                            @elseif($order->status == 3)
                                 ĐƠN HÀNG ĐÃ HOÀNG THÀNH 
+                            @elseif($order->status == 4)
+                                ĐƠN HÀNG ĐÃ HUỶ
                             @endif
                         </span>
                     </div>
@@ -94,7 +96,7 @@
 
                     <div class="payBill_address_content">
                 
-                        {{--Do'orders' chỉ lưu 'shippingaddress',chúng ta lấy Tên và SĐT từ thông tin tài khoản hiện tại) --}}
+                        {{--Do'orders' chỉ lưu 'địa chỉ giao hàng',nên lấy Tên và SĐT từ thông tin tài khoản hiện tại) --}}
                         <span class="payBill_address_contentName">{{ Auth::user()->fullname ?? Auth::user()->name }}</span>
                         <span class="payBill_address_contentPhone">( {{ Auth::user()->phone ?? 'N/A' }} ) </span>
                         <span class="payBill_address_contentAddress">{{ $order->shippingaddress }}</span>

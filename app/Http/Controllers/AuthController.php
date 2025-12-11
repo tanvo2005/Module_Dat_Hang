@@ -51,18 +51,10 @@ class AuthController extends Controller
         
         if(Auth::attempt($dangNhap)){
             $request->session()->regenerate();
-
-            // 1. Lấy người dùng vừa đăng nhập
             $user = Auth::user();
-
-            // 2. Kiểm tra vai trò (rolename)
             if ($user->roles()->where('rolename', 'manager')->exists()) {
-                
-                // 3. Nếu là Admin -> Chuyển đến trang duyệt đơn
                 return redirect()->route('manager.orders.index');
             }
-            
-            // 4. Nếu là người dùng thường -> Chuyển về trang chủ
             return redirect()->intended('/');
         }
 

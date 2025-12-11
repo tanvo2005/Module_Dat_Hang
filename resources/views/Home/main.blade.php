@@ -9,6 +9,7 @@
                     Danh Mục
                 </h3>
                 <ul class="category-list">
+                    <li class="category-item"><a href="{{ route('index') }}" class="category-item__link"> Tất cả </a></li>
                     @foreach ($categories as $cat)
                     <li
                         class="category-item {{ isset($category) && $category->category_id == $cat->category_id ? 'category-item-active' : '' }}">
@@ -45,34 +46,23 @@
             </div>
 
             <div class="home-product">
-
-                {{-- SỬA 1: Kiểm tra biến $products thay vì $variants --}}
                 @if(isset($products) && $products->count() > 0)
                 <div class="grid__row">
-
-                    {{-- SỬA 2: Lặp qua danh sách Product --}}
                     @foreach ($products as $product)
-
                     {{-- Lấy biến thể đại diện (rẻ nhất) để hiển thị ảnh và giá --}}
                     @php
                     $representVariant = $product->minPriceVariant;
                     @endphp
 
                     <div class="grid__column-2-4">
-                        {{-- Link trỏ đến chi tiết theo ID sản phẩm cha --}}
                         <a href="{{ route('productDetail', $product->product_id) }}" class="home-product-item-link">
                             <div class="home-product-item">
-
-                                {{-- SỬA 3: Lấy ảnh từ biến thể đại diện. Dùng img_ulr (theo DB của bạn) --}}
                                 <div class="home-product-item__img"
                                     style="background-image: url({{ asset($representVariant->img_ulr ?? 'assets/img/logo.png') }});">
                                 </div>
-
-                                {{-- SỬA 4: Lấy tên trực tiếp từ bảng Product --}}
                                 <h4 class="home-product-item__name">{{ $product->productname }}</h4>
 
                                 <div class="home-product-item__price">
-                                    {{-- SỬA 5: Hiển thị giá --}}
                                     @if($representVariant)
                                     <span class="home-product-item__price-old">{{ number_format($representVariant->price
                                         * 1.2) }}đ</span>
@@ -118,7 +108,6 @@
                     @endforeach
                 </div>
 
-                {{-- SỬA 6: Phân trang tự động của Laravel --}}
                 <ul class="panigation home-product__panigation">
                     <li class="panigation-item">
                         <a href="" class="panigation-item__link">

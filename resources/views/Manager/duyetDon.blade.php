@@ -1,5 +1,5 @@
 @extends('Manager.layout')
-@section('title','Duyệt đơn')
+@section('title', 'Duyệt đơn')
 @section('content')
     <h2 style="color: #2C3E50;">Quản lý Đơn hàng</h2>
     <p>Tổng cộng có {{ $orders->total() }} đơn hàng.</p>
@@ -24,18 +24,21 @@
                         <td>{{ $order->user->name ?? 'N/A' }}</td>
                         <td>{{ number_format($order->totalamount) }}đ</td>
                         <td>
-                            @if($order->status == 0)
+                            @if ($order->status == 0)
                                 <span class="badge bg-warning text-dark">Chờ xử lý</span>
                             @elseif($order->status == 1)
                                 <span class="badge bg-info text-dark">Đang chuẩn bị hàng</span>
                             @elseif($order->status == 2)
-                                <span class="badge bg-primary">Đang giao hàng</span> 
-                            @else
+                                <span class="badge bg-primary">Đang giao hàng</span>
+                            @elseif($order->status == 3)
                                 <span class="badge bg-success">Hoàn thành</span>
+                            @elseif($order->status == 4)
+                                <span class="badge bg-danger">Đã hủy</span>
                             @endif
                         </td>
                         <td>
-                            <form action="{{ route('manager.orders.updateStatus', $order->order_id) }}" method="POST" class="d-flex">
+                            <form action="{{ route('manager.orders.updateStatus', $order->order_id) }}" method="POST"
+                                class="d-flex">
                                 @csrf
                                 @method('PATCH')
                                 <select name="status" class="form-select form-select-sm me-2">
@@ -43,6 +46,7 @@
                                     <option value="1" {{ $order->status == 1 ? 'selected' : '' }}>Đang chủng bị hàng</option>
                                     <option value="2" {{ $order->status == 2 ? 'selected' : '' }}>Đang giao hàng</option>
                                     <option value="3" {{ $order->status == 3 ? 'selected' : '' }}>Hoàn thành</option>
+                                    <option value="4" {{ $order->status == 4 ? 'selected' : '' }}>Đã hủy</option>
                                 </select>
                                 <button type="submit" class="btn btn-primary btn-sm btnSave">Lưu</button>
                             </form>

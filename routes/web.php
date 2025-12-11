@@ -41,6 +41,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/order/success', [DatHangController::class, 'showSuccess'])->name('order.success');
     Route::get('/myorder', [DatHangController::class, 'myOrder'])->name('myOrder');
     Route::get('/myorderdetail/{id}', [DatHangController::class, 'myOrderDetail'])->name('myOrderDetail');
+    Route::post('/order/cancel/{id}', [DatHangController::class, 'cancelOrder'])->name('order.cancel');
 });
 
 //xử lí giỏ hàng
