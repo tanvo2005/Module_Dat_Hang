@@ -54,13 +54,13 @@
                                 <i class="myorder_Content_productShippericon fa-solid fa-car-side"></i>
                                 <span class="myorder_Content_productShipperName">
                                     @if ($order->status == 0)
-                                        Chờ xử lý
+                                        <span style="color: #FACC15;"> Chờ xử lý</span>
                                     @elseif($order->status == 1)
-                                        Đang chuẩn bị hàng
+                                        <span style="color: #3B82F6;">Đang chuẩn bị hàng</span>
                                     @elseif($order->status == 2)
-                                        Đang giao
+                                        <span style="color: #F97316;"> Đang giao</span>
                                     @elseif($order->status == 3)
-                                        Giao hàng thành công
+                                        Hoàn Thành
                                     @else
                                         <span style="color: red;"> Đơn hàng đã huỷ</span>
                                     @endif

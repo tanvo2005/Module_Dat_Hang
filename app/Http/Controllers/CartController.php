@@ -67,8 +67,6 @@ class CartController extends Controller
         if ($request->has('buy_now')) {
             return redirect()->route('cartDetail')->with('success', 'Đã thêm sản phẩm! Vui lòng thanh toán.');
         }
-        
-        //Chuyển hướng người dùng trở lại trang trước đó với thông báo thành công
         return redirect()->back()->with('success', 'Đã thêm sản phẩm vào giỏ hàng!');
     }
 
@@ -141,8 +139,6 @@ class CartController extends Controller
 
         //ấy giỏ hàng trước khi xoá
         $cart = $cartDetail->cart;
-
-        //xóa
         $cartDetail->delete();
 
         //tính toán lại tổng tiền sau khi xóa
