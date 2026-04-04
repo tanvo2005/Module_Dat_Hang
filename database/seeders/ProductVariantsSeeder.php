@@ -14,391 +14,1289 @@ class ProductVariantsSeeder extends Seeder
     public function run(): void
     {
         DB::table('product_variants')->insert([
+            // sp1 1.1
+            [
+
+                'product_id'=>1,
+                'size'=>1,
+                'color'=>'Màu Nâu',
+                'price'=>390000,
+                'img_ulr'=>'./assets/img/damid11.jpg',
+                'quantity'=>30
+            ],
+            [
+
+                'product_id'=>1,
+                'size'=>2,
+                'color'=>'Màu Nâu',
+                'price'=>390000,
+                'img_ulr'=>'./assets/img/damid11.jpg',
+                'quantity'=>30
+            ],
+            [
+
+                'product_id'=>1,
+                'size'=>3,
+                'color'=>'Màu Nâu',
+                'price'=>390000,
+                'img_ulr'=>'./assets/img/damid11.jpg',
+                'quantity'=>30
+            ],
+            [
+
+                'product_id'=>1,
+                'size'=>4,
+                'color'=>'Màu Nâu',
+                'price'=>390000,
+                'img_ulr'=>'./assets/img/damid11.jpg',
+                'quantity'=>30
+            ],
+
+
+            //sp1.2
             [
                 'product_id'=>1,
-                'size'=>33,
-                'color'=>'Trắng cam',
-                'price'=>390.000,
-                'img_ulr'=>'./assets/img/bd1trangcam.jpg',
+                'size'=>1,
+                'color'=>'Màu kem',
+                'price'=>470000,
+                'img_ulr'=>'./assets/img/damid12.jpg',
                 'quantity'=>30
             ],
             [
                 'product_id'=>1,
-                'size'=>33,
-                'color'=>'Xám hồng',
-                'price'=>470.000,
-                'img_ulr'=>'./assets/img/bd1xamhong.jpg',
+                'size'=>2,
+                'color'=>'Màu kem',
+                'price'=>470000,
+                'img_ulr'=>'./assets/img/damid12.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>1,
+                'size'=>3,
+                'color'=>'Màu kem',
+                'price'=>470000,
+                'img_ulr'=>'./assets/img/damid12.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>1,
+                'size'=>4,
+                'color'=>'Màu kem',
+                'price'=>470000,
+                'img_ulr'=>'./assets/img/damid12.jpg',
+                'quantity'=>30
+            ],
+            // sp dam 2.1
+            [
+                'product_id'=>2,
+                'size'=>1,
+                'color'=>'Hồng Đỗ',
+                'price'=>550550,
+                'img_ulr'=>'./assets/img/damid21.jpg',
                 'quantity'=>30
             ],
             [
                 'product_id'=>2,
-                'size'=>33,
-                'color'=>'Trắng đen',
-                'price'=>147.550,
-                'img_ulr'=>'./assets/img/bd2trangden.jpg',
+                'size'=>2,
+                'color'=>'Hồng Đỗ',
+                'price'=>550550,
+                'img_ulr'=>'./assets/img/damid21.jpg',
                 'quantity'=>30
             ],
             [
                 'product_id'=>2,
-                'size'=>33,
-                'color'=>'Xanh trắng',
-                'price'=>150.000,
-                'img_ulr'=>'./assets/img/bd2xanhtrang.jpg',
+                'size'=>3,
+                'color'=>'Hồng Đỗ',
+                'price'=>550550,
+                'img_ulr'=>'./assets/img/damid21.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>2,
+                'size'=>4,
+                'color'=>'Hồng Đỗ',
+                'price'=>550550,
+                'img_ulr'=>'./assets/img/damid21.jpg',
+                'quantity'=>30
+            ],
+            //sp dam 2.2
+            [
+                'product_id'=>2,
+                'size'=>1,
+                'color'=>'Đỏ đô',
+                'price'=>450000,
+                'img_ulr'=>'./assets/img/damid22.jpg',
+                'quantity'=>30
+            ],
+             [
+                'product_id'=>2,
+                'size'=>2,
+                'color'=>'Đỏ đô',
+                'price'=>450000,
+                'img_ulr'=>'./assets/img/damid22.jpg',
+                'quantity'=>30
+            ],
+             [
+                'product_id'=>2,
+                'size'=>3,
+                'color'=>'Đỏ đô',
+                'price'=>450000,
+                'img_ulr'=>'./assets/img/damid22.jpg',
+                'quantity'=>30
+            ],
+             [
+                'product_id'=>2,
+                'size'=>4,
+                'color'=>'Đỏ đô',
+                'price'=>450000,
+                'img_ulr'=>'./assets/img/damid22.jpg',
+                'quantity'=>30
+            ],
+             [
+                'product_id'=>2,
+                'size'=>5,
+                'color'=>'Đỏ đô',
+                'price'=>450000,
+                'img_ulr'=>'./assets/img/damid22.jpg',
+                'quantity'=>30
+            ],
+            // sp dam 3.1
+            [
+                'product_id'=>3,
+                'size'=>1,
+                'color'=>'Xanh be',
+                'price'=>365000,
+                'img_ulr'=>'./assets/img/damid31.jpg',
                 'quantity'=>30
             ],
             [
                 'product_id'=>3,
-                'size'=>33,
-                'color'=>'Xanh ngọc',
-                'price'=>109.000,
-                'img_ulr'=>'./assets/img/bd3xanhngoc.jpg',
+                'size'=>2,
+                'color'=>'Xanh be',
+                'price'=>365000,
+                'img_ulr'=>'./assets/img/damid31.jpg',
                 'quantity'=>30
             ],
             [
                 'product_id'=>3,
-                'size'=>33,
-                'color'=>'Nhám vàng',
-                'price'=>150.000,
-                'img_ulr'=>'./assets/img/bd3nhamvang.jpg',
+                'size'=>3,
+                'color'=>'Xanh be',
+                'price'=>365000,
+                'img_ulr'=>'./assets/img/damid31.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>3,
+                'size'=>4,
+                'color'=>'Xanh be',
+                'price'=>365000,
+                'img_ulr'=>'./assets/img/damid31.jpg',
+                'quantity'=>30
+            ],
+            // sp dam 3.2
+            [
+                'product_id'=>3,
+                'size'=>1,
+                'color'=>'Xanh be',
+                'price'=>365000,
+                'img_ulr'=>'./assets/img/damid32.jpg',
+                'quantity'=>30
+            ],
+             [
+                'product_id'=>3,
+                'size'=>2,
+                'color'=>'Xanh be',
+                'price'=>365000,
+                'img_ulr'=>'./assets/img/damid32.jpg',
+                'quantity'=>30
+            ],
+             [
+                'product_id'=>3,
+                'size'=>3,
+                'color'=>'Xanh be',
+                'price'=>365000,
+                'img_ulr'=>'./assets/img/damid32.jpg',
+                'quantity'=>30
+            ],
+            // sp dam 4.1
+            [
+                'product_id'=>4,
+                'size'=>1,
+                'color'=>'Màu đen',
+                'price'=>420000,
+                'img_ulr'=>'./assets/img/damid41.jpg',
                 'quantity'=>30
             ],
             [
                 'product_id'=>4,
-                'size'=>33,
-                'color'=>'Trắng đen',
-                'price'=>420.000,
-                'img_ulr'=>'./assets/img/bd4trangden.jpg',
+                'size'=>2,
+                'color'=>'Màu đen',
+                'price'=>420000,
+                'img_ulr'=>'./assets/img/damid41.jpg',
                 'quantity'=>30
             ],
             [
                 'product_id'=>4,
-                'size'=>33,
-                'color'=>'Full trắng',
-                'price'=>390.000,
-                'img_ulr'=>'./assets/img/bd4fulltrang.jpg',
+                'size'=>3,
+                'color'=>'Màu đen',
+                'price'=>420000,
+                'img_ulr'=>'./assets/img/damid41.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>4,
+                'size'=>4,
+                'color'=>'Màu đen',
+                'price'=>420000,
+                'img_ulr'=>'./assets/img/damid41.jpg',
+                'quantity'=>30
+            ],
+            // sp dam 4.2
+            [
+                'product_id'=>4,
+                'size'=>1,
+                'color'=>'Màu nâu',
+                'price'=>390000,
+                'img_ulr'=>'./assets/img/damid42.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>4,
+                'size'=>2,
+                'color'=>'Màu nâu',
+                'price'=>390000,
+                'img_ulr'=>'./assets/img/damid42.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>4,
+                'size'=>3,
+                'color'=>'Màu nâu',
+                'price'=>390000,
+                'img_ulr'=>'./assets/img/damid42.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>4,
+                'size'=>4,
+                'color'=>'Màu nâu',
+                'price'=>390000,
+                'img_ulr'=>'./assets/img/damid42.jpg',
+                'quantity'=>30
+            ],
+            // sp dam 5.1
+            [
+                'product_id'=>5,
+                'size'=>1,
+                'color'=>'Màu da',
+                'price'=>316000,
+                'img_ulr'=>'./assets/img/damid51.jpg',
+                'quantity'=>30
+            ],
+             [
+                'product_id'=>5,
+                'size'=>2,
+                'color'=>'Màu da',
+                'price'=>316000,
+                'img_ulr'=>'./assets/img/damid51.jpg',
+                'quantity'=>30
+            ],
+             [
+                'product_id'=>5,
+                'size'=>3,
+                'color'=>'Màu da',
+                'price'=>316000,
+                'img_ulr'=>'./assets/img/damid51.jpg',
+                'quantity'=>30
+            ],
+             [
+                'product_id'=>5,
+                'size'=>4,
+                'color'=>'Màu da',
+                'price'=>316000,
+                'img_ulr'=>'./assets/img/damid51.jpg',
+                'quantity'=>30
+            ],
+            // sp dam 5.2
+            [
+                'product_id'=>5,
+                'size'=>1,
+                'color'=>'màu đen',
+                'price'=>330000,
+                'img_ulr'=>'./assets/img/damid52.jpg',
                 'quantity'=>30
             ],
             [
                 'product_id'=>5,
-                'size'=>33,
-                'color'=>'Xanh ngọc',
-                'price'=>316.000,
-                'img_ulr'=>'./assets/img/bd5xanhngoc.jpg',
+                'size'=>2,
+                'color'=>'màu đen',
+                'price'=>330000,
+                'img_ulr'=>'./assets/img/damid52.jpg',
                 'quantity'=>30
             ],
             [
                 'product_id'=>5,
-                'size'=>33,
-                'color'=>'Xanh lá',
-                'price'=>330.000,
-                'img_ulr'=>'./assets/img/bd5xanhla.jpg',
+                'size'=>3,
+                'color'=>'màu đen',
+                'price'=>330000,
+                'img_ulr'=>'./assets/img/damid52.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>5,
+                'size'=>4,
+                'color'=>'màu đen',
+                'price'=>330000,
+                'img_ulr'=>'./assets/img/damid52.jpg',
+                'quantity'=>30
+            ],
+            // VÁY
+
+            //sp vay 1.1
+            [
+                'product_id'=>6,
+                'size'=>1,
+                'color'=>'Màu hồng',
+                'price'=>230000,
+                'img_ulr'=>'./assets/img/vay11.jpg',
                 'quantity'=>30
             ],
             [
                 'product_id'=>6,
-                'size'=>33,
-                'color'=>'Xanh hồng',
-                'price'=>330.000,
-                'img_ulr'=>'./assets/img/bd6.jpg',
+                'size'=>2,
+                'color'=>'Màu hồng',
+                'price'=>230000,
+                'img_ulr'=>'./assets/img/vay11.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>6,
+                'size'=>3,
+                'color'=>'Màu hồng',
+                'price'=>230000,
+                'img_ulr'=>'./assets/img/vay11.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>6,
+                'size'=>4,
+                'color'=>'Màu hồng',
+                'price'=>230000,
+                'img_ulr'=>'./assets/img/vay11.jpg',
+                'quantity'=>30
+            ],
+            // sp vay 1.2
+            [
+                'product_id'=>6,
+                'size'=>1,
+                'color'=>'Màu kem',
+                'price'=>230000,
+                'img_ulr'=>'./assets/img/vay12.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>6,
+                'size'=>2,
+                'color'=>'Màu kem',
+                'price'=>230000,
+                'img_ulr'=>'./assets/img/vay12.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>6,
+                'size'=>3,
+                'color'=>'Màu kem',
+                'price'=>230000,
+                'img_ulr'=>'./assets/img/vay12.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>6,
+                'size'=>4,
+                'color'=>'Màu kem',
+                'price'=>230000,
+                'img_ulr'=>'./assets/img/vay12.jpg',
+                'quantity'=>30
+            ],
+            // sp vay 2.1
+            [
+                'product_id'=>7,
+                'size'=>1,
+                'color'=>'Màu đen',
+                'price'=>249600,
+                'img_ulr'=>'./assets/img/vay21.jpg',
                 'quantity'=>30
             ],
             [
                 'product_id'=>7,
-                'size'=>33,
-                'color'=>'Xanh Paster',
-                'price'=>249.600,
-                'img_ulr'=>'./assets/img/bd7xanhpaster.jpg',
+                'size'=>2,
+                'color'=>'Màu đen',
+                'price'=>249600,
+                'img_ulr'=>'./assets/img/vay21.jpg',
                 'quantity'=>30
             ],
             [
                 'product_id'=>7,
-                'size'=>33,
-                'color'=>'Vàng',
-                'price'=>300.000,
-                'img_ulr'=>'./assets/img/bd7vang.jpg',
+                'size'=>3,
+                'color'=>'Màu đen',
+                'price'=>249600,
+                'img_ulr'=>'./assets/img/vay21.jpg',
                 'quantity'=>30
             ],
+            [
+                'product_id'=>7,
+                'size'=>4,
+                'color'=>'Màu đen',
+                'price'=>249600,
+                'img_ulr'=>'./assets/img/vay21.jpg',
+                'quantity'=>30
+            ],
+            // sp vay 2.2
+            [
+                'product_id'=>7,
+                'size'=>1,
+                'color'=>'Màu hồng',
+                'price'=>300000,
+                'img_ulr'=>'./assets/img/vay22.jpg',
+                'quantity'=>30
+            ],
+             [
+                'product_id'=>7,
+                'size'=>2,
+                'color'=>'Màu hồng',
+                'price'=>300000,
+                'img_ulr'=>'./assets/img/vay22.jpg',
+                'quantity'=>30
+            ],
+             [
+                'product_id'=>7,
+                'size'=>3,
+                'color'=>'Màu hồng',
+                'price'=>300000,
+                'img_ulr'=>'./assets/img/vay22.jpg',
+                'quantity'=>30
+            ],
+             [
+                'product_id'=>7,
+                'size'=>4,
+                'color'=>'Màu hồng',
+                'price'=>300000,
+                'img_ulr'=>'./assets/img/vay22.jpg',
+                'quantity'=>30
+            ],
+            // sp vay 3.1
             [
                 'product_id'=>8,
-                'size'=>33,
-                'color'=>'Ngọc chuối',
-                'price'=>135.000,
-                'img_ulr'=>'./assets/img/bd8ngocchuoi.jpg',
+                'size'=>1,
+                'color'=>'Kem',
+                'price'=>335000,
+                'img_ulr'=>'./assets/img/vay31.jpg',
                 'quantity'=>30
             ],
+             [
+                'product_id'=>8,
+                'size'=>2,
+                'color'=>'Kem',
+                'price'=>335000,
+                'img_ulr'=>'./assets/img/vay31.jpg',
+                'quantity'=>30
+            ],
+             [
+                'product_id'=>8,
+                'size'=>3,
+                'color'=>'Kem',
+                'price'=>335000,
+                'img_ulr'=>'./assets/img/vay31.jpg',
+                'quantity'=>30
+            ],
+             [
+                'product_id'=>8,
+                'size'=>4,
+                'color'=>'Kem',
+                'price'=>335000,
+                'img_ulr'=>'./assets/img/vay31.jpg',
+                'quantity'=>30
+            ],
+            // sp vay 3.2
             [
                 'product_id'=>8,
-                'size'=>33,
-                'color'=>'Hồng trắng',
-                'price'=>170.000,
-                'img_ulr'=>'./assets/img/bd8hongtrang.jpg',
-                'quantity'=>30
-            ],
-            [
-                'product_id'=>9,
-                'size'=>33,
+                'size'=>1,
                 'color'=>'Trắng',
-                'price'=>153.000,
-                'img_ulr'=>'./assets/img/bd9trang.jpg',
+                'price'=>370000,
+                'img_ulr'=>'./assets/img/vay32.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>8,
+                'size'=>2,
+                'color'=>'Trắng',
+                'price'=>370000,
+                'img_ulr'=>'./assets/img/vay32.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>8,
+                'size'=>3,
+                'color'=>'Trắng',
+                'price'=>370000,
+                'img_ulr'=>'./assets/img/vay32.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>8,
+                'size'=>4,
+                'color'=>'Trắng',
+                'price'=>370000,
+                'img_ulr'=>'./assets/img/vay32.jpg',
+                'quantity'=>30
+            ],
+            // sp vay 4.1
+            [
+                'product_id'=>9,
+                'size'=>1,
+                'color'=>'Kem',
+                'price'=>253000,
+                'img_ulr'=>'./assets/img/vay41.jpg',
                 'quantity'=>30
             ],
             [
                 'product_id'=>9,
-                'size'=>33,
-                'color'=>'Bạc',
-                'price'=>142.000,
-                'img_ulr'=>'./assets/img/bd9bac.jpg',
+                'size'=>2,
+                'color'=>'Kem',
+                'price'=>253000,
+                'img_ulr'=>'./assets/img/vay41.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>9,
+                'size'=>3,
+                'color'=>'Kem',
+                'price'=>253000,
+                'img_ulr'=>'./assets/img/vay41.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>9,
+                'size'=>4,
+                'color'=>'Kem',
+                'price'=>253000,
+                'img_ulr'=>'./assets/img/vay41.jpg',
+                'quantity'=>30
+            ],
+            // sp vay 4.2
+            [
+                'product_id'=>9,
+                'size'=>1,
+                'color'=>'Kem',
+                'price'=>272000,
+                'img_ulr'=>'./assets/img/vay42.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>9,
+                'size'=>2,
+                'color'=>'Kem',
+                'price'=>272000,
+                'img_ulr'=>'./assets/img/vay42.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>9,
+                'size'=>3,
+                'color'=>'Kem',
+                'price'=>272000,
+                'img_ulr'=>'./assets/img/vay42.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>9,
+                'size'=>4,
+                'color'=>'Kem',
+                'price'=>272000,
+                'img_ulr'=>'./assets/img/vay42.jpg',
+                'quantity'=>30
+            ],
+            // sp vay 5.1
+            [
+                'product_id'=>10,
+                'size'=>1,
+                'color'=>'Trắng sữa',
+                'price'=>217000,
+                'img_ulr'=>'./assets/img/vay51.jpg',
                 'quantity'=>30
             ],
             [
                 'product_id'=>10,
-                'size'=>33,
-                'color'=>'Trắng xanh',
-                'price'=>137.000,
-                'img_ulr'=>'./assets/img/bd10xanh.jpg',
+                'size'=>2,
+                'color'=>'Trắng sữa',
+                'price'=>217000,
+                'img_ulr'=>'./assets/img/vay51.jpg',
                 'quantity'=>30
             ],
             [
                 'product_id'=>10,
-                'size'=>33,
-                'color'=>'Trắng vàng',
-                'price'=>150.000,
-                'img_ulr'=>'./assets/img/bd10vang.jpg',
+                'size'=>3,
+                'color'=>'Trắng sữa',
+                'price'=>217000,
+                'img_ulr'=>'./assets/img/vay51.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>10,
+                'size'=>4,
+                'color'=>'Trắng sữa',
+                'price'=>217000,
+                'img_ulr'=>'./assets/img/vay51.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>10,
+                'size'=>5,
+                'color'=>'Trắng sữa',
+                'price'=>217000,
+                'img_ulr'=>'./assets/img/vay51.jpg',
+                'quantity'=>30
+            ],
+            // sp vay 5.2
+            [
+                'product_id'=>10,
+                'size'=>1,
+                'color'=>'Trắng sữa',
+                'price'=>227000,
+                'img_ulr'=>'./assets/img/vay52.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>10,
+                'size'=>2,
+                'color'=>'Trắng sữa',
+                'price'=>227000,
+                'img_ulr'=>'./assets/img/vay52.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>10,
+                'size'=>3,
+                'color'=>'Trắng sữa',
+                'price'=>227000,
+                'img_ulr'=>'./assets/img/vay52.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>10,
+                'size'=>4,
+                'color'=>'Trắng sữa',
+                'price'=>227000,
+                'img_ulr'=>'./assets/img/vay52.jpg',
                 'quantity'=>30
             ],
 
-            // sandal
+            // ÁO THUN
+
+            //sp athun 1.1
             [
                 'product_id'=>11,
-                'size'=>33,
-                'color'=>'Đen',
-                'price'=>118.000,
-                'img_ulr'=>'./assets/img/sd1den.jpg',
+                'size'=>1,
+                'color'=>'Đỏ',
+                'price'=>150000,
+                'img_ulr'=>'./assets/img/Athun11.jpg',
                 'quantity'=>30
             ],
+             [
+                'product_id'=>11,
+                'size'=>2,
+                'color'=>'Đỏ',
+                'price'=>150000,
+                'img_ulr'=>'./assets/img/Athun11.jpg',
+                'quantity'=>30
+            ],
+             [
+                'product_id'=>11,
+                'size'=>3,
+                'color'=>'Đỏ',
+                'price'=>150000,
+                'img_ulr'=>'./assets/img/Athun11.jpg',
+                'quantity'=>30
+            ],
+             [
+                'product_id'=>11,
+                'size'=>4,
+                'color'=>'Đỏ',
+                'price'=>150000,
+                'img_ulr'=>'./assets/img/Athun11.jpg',
+                'quantity'=>30
+            ],
+            // sp athun 1.2
             [
                 'product_id'=>11,
-                'size'=>33,
-                'color'=>'Đen trắng',
-                'price'=>124.000,
-                'img_ulr'=>'./assets/img/sd1dentrang.jpg',
-                'quantity'=>30
-            ],
-
-            [
-                'product_id'=>12,
-                'size'=>33,
-                'color'=>'Đen trắng',
-                'price'=>207.000,
-                'img_ulr'=>'./assets/img/sd2dentrang.jpg',
-                'quantity'=>30
-            ],
-            [
-                'product_id'=>12,
-                'size'=>33,
-                'color'=>'Đen full',
-                'price'=>220.000,
-                'img_ulr'=>'./assets/img/sd2den.jpg',
-                'quantity'=>30
-            ],
-
-            [
-                'product_id'=>13,
-                'size'=>33,
-                'color'=>'Ghi xám',
-                'price'=>99.000,
-                'img_ulr'=>'./assets/img/sd3ghixam.jpg',
-                'quantity'=>30
-            ],
-            [
-                'product_id'=>13,
-                'size'=>33,
-                'color'=>'Xanh đen',
-                'price'=>105.000,
-                'img_ulr'=>'./assets/img/sd3xanhden.jpg',
-                'quantity'=>30
-            ],
-
-            // sanhdn4 14
-            [
-                'product_id'=>14,
-                'size'=>33,
-                'color'=>'xám full',
-                'price'=>115.000,
-                'img_ulr'=>'./assets/img/sd4xamfull.jpg',
-                'quantity'=>30
-            ],
-            [
-                'product_id'=>14,
-                'size'=>33,
-                'color'=>'Xám đen',
-                'price'=>135.000,
-                'img_ulr'=>'./assets/img/sd4xamden.jpg',
-                'quantity'=>30
-            ],
-
-            // sandanl 5 15
-            [
-                'product_id'=>15,
-                'size'=>33,
-                'color'=>'Đế đen',
-                'price'=>100.000,
-                'img_ulr'=>'./assets/img/sd5deden.jpg',
-                'quantity'=>30
-            ],
-            [
-                'product_id'=>15,
-                'size'=>33,
-                'color'=>'Đế trắng',
-                'price'=>110.000,
-                'img_ulr'=>'./assets/img/sd5detrang.jpg',
-                'quantity'=>30
-            ],
-
-            // sanhdan6 16
-            [
-                'product_id'=>16,
-                'size'=>33,
+                'size'=>1,
                 'color'=>'Xanh',
-                'price'=>138.000,
-                'img_ulr'=>'./assets/img/sd6xanh.jpg',
+                'price'=>150000,
+                'img_ulr'=>'./assets/img/Athun12.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>11,
+                'size'=>2,
+                'color'=>'Xanh',
+                'price'=>150000,
+                'img_ulr'=>'./assets/img/Athun12.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>11,
+                'size'=>3,
+                'color'=>'Xanh',
+                'price'=>150000,
+                'img_ulr'=>'./assets/img/Athun12.jpg',
+                'quantity'=>30
+            ],
+            //sp athun 2.1
+            [
+                'product_id'=>12,
+                'size'=>1,
+                'color'=>'Hồng ruốc',
+                'price'=>100000,
+                'img_ulr'=>'./assets/img/athun21.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>12,
+                'size'=>2,
+                'color'=>'Hồng ruốc',
+                'price'=>100000,
+                'img_ulr'=>'./assets/img/athun21.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>12,
+                'size'=>3,
+                'color'=>'Hồng ruốc',
+                'price'=>100000,
+                'img_ulr'=>'./assets/img/athun21.jpg',
+                'quantity'=>30
+            ],
+            //sp athun 2.2
+            [
+                'product_id'=>12,
+                'size'=>1,
+                'color'=>'Xám tiêu',
+                'price'=>100000,
+                'img_ulr'=>'./assets/img/athun22.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>12,
+                'size'=>2,
+                'color'=>'Xám tiêu',
+                'price'=>100000,
+                'img_ulr'=>'./assets/img/athun22.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>12,
+                'size'=>3,
+                'color'=>'Xám tiêu',
+                'price'=>100000,
+                'img_ulr'=>'./assets/img/athun22.jpg',
+                'quantity'=>30
+            ],
+            // sp athun 3.1
+            [
+                'product_id'=>13,
+                'size'=>1,
+                'color'=>'Trắng',
+                'price'=>160000,
+                'img_ulr'=>'./assets/img/athun31.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>13,
+                'size'=>2,
+                'color'=>'Trắng',
+                'price'=>160000,
+                'img_ulr'=>'./assets/img/athun31.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>13,
+                'size'=>3,
+                'color'=>'Trắng',
+                'price'=>160000,
+                'img_ulr'=>'./assets/img/athun31.jpg',
+                'quantity'=>30
+            ],
+            // sp athun 3.2
+            [
+                'product_id'=>13,
+                'size'=>1,
+                'color'=>'Đen',
+                'price'=>160000,
+                'img_ulr'=>'./assets/img/athun32.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>13,
+                'size'=>2,
+                'color'=>'Đen',
+                'price'=>160000,
+                'img_ulr'=>'./assets/img/athun32.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>13,
+                'size'=>3,
+                'color'=>'Đen',
+                'price'=>160000,
+                'img_ulr'=>'./assets/img/athun32.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>13,
+                'size'=>4,
+                'color'=>'Đen',
+                'price'=>160000,
+                'img_ulr'=>'./assets/img/athun32.jpg',
+                'quantity'=>30
+            ],
+            // sp athun 4.1
+            [
+                'product_id'=>14,
+                'size'=>1,
+                'color'=>'xanh lá',
+                'price'=>135000,
+                'img_ulr'=>'./assets/img/athun41.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>14,
+                'size'=>2,
+                'color'=>'xanh lá',
+                'price'=>135000,
+                'img_ulr'=>'./assets/img/athun41.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>14,
+                'size'=>3,
+                'color'=>'xanh lá',
+                'price'=>135000,
+                'img_ulr'=>'./assets/img/athun41.jpg',
+                'quantity'=>30
+            ],
+            // sp athun 4.2
+            [
+                'product_id'=>14,
+                'size'=>1,
+                'color'=>'nâu',
+                'price'=>145000,
+                'img_ulr'=>'./assets/img/athun42.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>14,
+                'size'=>2,
+                'color'=>'nâu',
+                'price'=>145000,
+                'img_ulr'=>'./assets/img/athun42.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>14,
+                'size'=>3,
+                'color'=>'nâu',
+                'price'=>145000,
+                'img_ulr'=>'./assets/img/athun42.jpg',
+                'quantity'=>30
+            ],
+            //sp athun 5.1
+            [
+                'product_id'=>15,
+                'size'=>1,
+                'color'=>'Xanh than',
+                'price'=>100000,
+                'img_ulr'=>'./assets/img/athun51.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>15,
+                'size'=>2,
+                'color'=>'Xanh than',
+                'price'=>100000,
+                'img_ulr'=>'./assets/img/athun51.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>15,
+                'size'=>3,
+                'color'=>'Xanh than',
+                'price'=>100000,
+                'img_ulr'=>'./assets/img/athun51.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>15,
+                'size'=>4,
+                'color'=>'Xanh than',
+                'price'=>100000,
+                'img_ulr'=>'./assets/img/athun51.jpg',
+                'quantity'=>30
+            ],
+            // sp athun 5.2
+            [
+                'product_id'=>15,
+                'size'=>1,
+                'color'=>'Màu be',
+                'price'=>110000,
+                'img_ulr'=>'./assets/img/athun52.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>15,
+                'size'=>2,
+                'color'=>'Màu be',
+                'price'=>110000,
+                'img_ulr'=>'./assets/img/athun52.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>15,
+                'size'=>3,
+                'color'=>'Màu be',
+                'price'=>110000,
+                'img_ulr'=>'./assets/img/athun52.jpg',
+                'quantity'=>30
+            ],
+            // sp athun 6.1
+            [
+                'product_id'=>16,
+                'size'=>1,
+                'color'=>'Hồng',
+                'price'=>138000,
+                'img_ulr'=>'./assets/img/athun61.jpg',
                 'quantity'=>30
             ],
             [
                 'product_id'=>16,
-                'size'=>33,
-                'color'=>'Kem',
-                'price'=>147.000,
-                'img_ulr'=>'./assets/img/sd6kem.jpg',
+                'size'=>2,
+                'color'=>'Hồng',
+                'price'=>138000,
+                'img_ulr'=>'./assets/img/athun61.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>16,
+                'size'=>3,
+                'color'=>'Hồng',
+                'price'=>138000,
+                'img_ulr'=>'./assets/img/athun61.jpg',
+                'quantity'=>30
+            ],
+            // sp athun 6.2
+            [
+                'product_id'=>16,
+                'size'=>1,
+                'color'=>'Xanh ngọc',
+                'price'=>147000,
+                'img_ulr'=>'./assets/img/athun62.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>16,
+                'size'=>2,
+                'color'=>'Xanh ngọc',
+                'price'=>147000,
+                'img_ulr'=>'./assets/img/athun62.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>16,
+                'size'=>3,
+                'color'=>'Xanh ngọc',
+                'price'=>147000,
+                'img_ulr'=>'./assets/img/athun62.jpg',
                 'quantity'=>30
             ],
 
-            // sanhdan7 17
+            // quần jean
+
+            // sp jean 1.1
             [
                 'product_id'=>17,
-                'size'=>33,
-                'color'=>'Nâu',
-                'price'=>222.000,
-                'img_ulr'=>'./assets/img/sd7nau.jpg',
+                'size'=>1,
+                'color'=>'bạc phối ren',
+                'price'=>222000,
+                'img_ulr'=>'./assets/img/jean11.jpg',
+                'quantity'=>30
+            ],
+             [
+                'product_id'=>17,
+                'size'=>2,
+                'color'=>'bạc phối ren',
+                'price'=>222000,
+                'img_ulr'=>'./assets/img/jean11.jpg',
+                'quantity'=>30
+            ],
+             [
+                'product_id'=>17,
+                'size'=>3,
+                'color'=>'bạc phối ren',
+                'price'=>222000,
+                'img_ulr'=>'./assets/img/jean11.jpg',
+                'quantity'=>30
+            ],
+             [
+                'product_id'=>17,
+                'size'=>4,
+                'color'=>'bạc phối ren',
+                'price'=>222000,
+                'img_ulr'=>'./assets/img/jean11.jpg',
+                'quantity'=>30
+            ],
+            // sp jean 1.2
+            [
+                'product_id'=>17,
+                'size'=>1,
+                'color'=>'Xanh than',
+                'price'=>235000,
+                'img_ulr'=>'./assets/img/jean12.jpg',
                 'quantity'=>30
             ],
             [
                 'product_id'=>17,
-                'size'=>33,
-                'color'=>'Xanh navy',
-                'price'=>235.000,
-                'img_ulr'=>'./assets/img/sd7navy.jpg',
+                'size'=>2,
+                'color'=>'Xanh than',
+                'price'=>235000,
+                'img_ulr'=>'./assets/img/jean12.jpg',
                 'quantity'=>30
             ],
-
-            // sanhdan8 18
+            [
+                'product_id'=>17,
+                'size'=>3,
+                'color'=>'Xanh than',
+                'price'=>235000,
+                'img_ulr'=>'./assets/img/jean12.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>17,
+                'size'=>4,
+                'color'=>'Xanh than',
+                'price'=>235000,
+                'img_ulr'=>'./assets/img/jean12.jpg',
+                'quantity'=>30
+            ],
+            // sp jean 2.1
             [
                 'product_id'=>18,
-                'size'=>33,
-                'color'=>'Be',
-                'price'=>105.000,
-                'img_ulr'=>'./assets/img/sd8be.jpg',
+                'size'=>1,
+                'color'=>'Nơ hồng',
+                'price'=>205000,
+                'img_ulr'=>'./assets/img/jean21.jpg',
                 'quantity'=>30
             ],
             [
                 'product_id'=>18,
-                'size'=>33,
-                'color'=>'Đen',
-                'price'=>110.000,
-                'img_ulr'=>'./assets/img/sd8den.jpg',
+                'size'=>2,
+                'color'=>'Nơ hồng',
+                'price'=>205000,
+                'img_ulr'=>'./assets/img/jean21.jpg',
                 'quantity'=>30
             ],
-
-            // dép nam 1 19
+            [
+                'product_id'=>18,
+                'size'=>3,
+                'color'=>'Nơ hồng',
+                'price'=>205000,
+                'img_ulr'=>'./assets/img/jean21.jpg',
+                'quantity'=>30
+            ],
+            // sp jean 2.2
+            [
+                'product_id'=>18,
+                'size'=>1,
+                'color'=>'Nâu nơ',
+                'price'=>210000,
+                'img_ulr'=>'./assets/img/jean22.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>18,
+                'size'=>2,
+                'color'=>'Nâu nơ',
+                'price'=>210000,
+                'img_ulr'=>'./assets/img/jean22.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>18,
+                'size'=>3,
+                'color'=>'Nâu nơ',
+                'price'=>210000,
+                'img_ulr'=>'./assets/img/jean22.jpg',
+                'quantity'=>30
+            ],
+            //  sp jean 3.1
             [
                 'product_id'=>19,
-                'size'=>33,
-                'color'=>'Đen',
-                'price'=>79.000,
-                'img_ulr'=>'./assets/img/dn1den.jpg',
+                'size'=>1,
+                'color'=>'Xanh nhạt',
+                'price'=>230000,
+                'img_ulr'=>'./assets/img/jean31.jpg',
                 'quantity'=>30
             ],
             [
                 'product_id'=>19,
-                'size'=>33,
-                'color'=>'grey',
-                'price'=>99.000,
-                'img_ulr'=>'./assets/img/dn1grey.jpg',
+                'size'=>2,
+                'color'=>'Xanh nhạt',
+                'price'=>230000,
+                'img_ulr'=>'./assets/img/jean31.jpg',
                 'quantity'=>30
             ],
-
-            // dép nam 2 20
             [
-                'product_id'=>20,
-                'size'=>33,
+                'product_id'=>19,
+                'size'=>3,
+                'color'=>'Xanh nhạt',
+                'price'=>230000,
+                'img_ulr'=>'./assets/img/jean31.jpg',
+                'quantity'=>30
+            ],
+            // sp jean 3.2
+            [
+                'product_id'=>19,
+                'size'=>1,
                 'color'=>'Xám',
-                'price'=>259.000,
-                'img_ulr'=>'./assets/img/dn2xam.jpg',
+                'price'=>230000,
+                'img_ulr'=>'./assets/img/jean32.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>19,
+                'size'=>2,
+                'color'=>'Xám',
+                'price'=>230000,
+                'img_ulr'=>'./assets/img/jean32.jpg',
+                'quantity'=>30
+            ],
+            [
+                'product_id'=>19,
+                'size'=>3,
+                'color'=>'Xám',
+                'price'=>23000,
+                'img_ulr'=>'./assets/img/jean32.jpg',
+                'quantity'=>30
+            ],
+            // sp jean 4.1
+            [
+                'product_id'=>20,
+                'size'=>1,
+                'color'=>'Đen',
+                'price'=>259000,
+                'img_ulr'=>'./assets/img/jean41.jpg',
                 'quantity'=>30
             ],
             [
                 'product_id'=>20,
-                'size'=>33,
-                'color'=>'Xanh mit',
-                'price'=>240.000,
-                'img_ulr'=>'./assets/img/dn2xanh.jpg',
-                'quantity'=>30
-            ],
-
-            // dép nam 3 21
-            [
-                'product_id'=>21,
-                'size'=>33,
+                'size'=>2,
                 'color'=>'Đen',
-                'price'=>175.000,
-                'img_ulr'=>'./assets/img/dn3den.jpg',
+                'price'=>259000,
+                'img_ulr'=>'./assets/img/jean41.jpg',
                 'quantity'=>30
             ],
+
+            [
+                'product_id'=>20,
+                'size'=>3,
+                'color'=>'Đen',
+                'price'=>259000,
+                'img_ulr'=>'./assets/img/jean41.jpg',
+                'quantity'=>30
+            ],
+
+            [
+                'product_id'=>20,
+                'size'=>4,
+                'color'=>'Đen',
+                'price'=>259000,
+                'img_ulr'=>'./assets/img/jean41.jpg',
+                'quantity'=>30
+            ],
+            // sp jean 4.2
+            [
+                'product_id'=>20,
+                'size'=>1,
+                'color'=>'Kem',
+                'price'=>240000,
+                'img_ulr'=>'./assets/img/jean42.jpg',
+                'quantity'=>30
+            ],
+             [
+                'product_id'=>20,
+                'size'=>2,
+                'color'=>'Kem',
+                'price'=>240000,
+                'img_ulr'=>'./assets/img/jean42.jpg',
+                'quantity'=>30
+            ],
+             [
+                'product_id'=>20,
+                'size'=>3,
+                'color'=>'Kem',
+                'price'=>240000,
+                'img_ulr'=>'./assets/img/jean42.jpg',
+                'quantity'=>30
+            ],
+            // sp jean 5.1
             [
                 'product_id'=>21,
-                'size'=>33,
-                'color'=>'Trắng',
-                'price'=>186.000,
-                'img_ulr'=>'./assets/img/dn3trang.jpg',
+                'size'=>1,
+                'color'=>'Trắng vẽ ngựa',
+                'price'=>175000,
+                'img_ulr'=>'./assets/img/jean51.jpg',
+                'quantity'=>30
+            ],
+             [
+                'product_id'=>21,
+                'size'=>2,
+                'color'=>'Trắng vẽ ngựa',
+                'price'=>175000,
+                'img_ulr'=>'./assets/img/jean51.jpg',
+                'quantity'=>30
+            ],
+             [
+                'product_id'=>21,
+                'size'=>3,
+                'color'=>'Trắng vẽ ngựa',
+                'price'=>175000,
+                'img_ulr'=>'./assets/img/jean51.jpg',
+                'quantity'=>30
+            ],
+            // sp jean 5.2
+            [
+                'product_id'=>21,
+                'size'=>1,
+                'color'=>'Trắng trơn',
+                'price'=>186000,
+                'img_ulr'=>'./assets/img/jean52.jpg',
+                'quantity'=>30
+            ],
+             [
+                'product_id'=>21,
+                'size'=>2,
+                'color'=>'Trắng trơn',
+                'price'=>186000,
+                'img_ulr'=>'./assets/img/jean52.jpg',
+                'quantity'=>30
+            ],
+             [
+                'product_id'=>21,
+                'size'=>3,
+                'color'=>'Trắng trơn',
+                'price'=>186000,
+                'img_ulr'=>'./assets/img/jean52.jpg',
                 'quantity'=>30
             ],
 
-            // dép nam 4 22
-            [
-                'product_id'=>22,
-                'size'=>33,
-                'color'=>'Kem',
-                'price'=>199.000,
-                'img_ulr'=>'./assets/img/dn4kem.jpg',
-                'quantity'=>30
-            ],
-            [
-                'product_id'=>22,
-                'size'=>33,
-                'color'=>'Nâu',
-                'price'=>205.000,
-                'img_ulr'=>'./assets/img/dn4nau.jpg',
-                'quantity'=>30
-            ],
-
-             // dép nam 5 23
-            [
-                'product_id'=>23,
-                'size'=>33,
-                'color'=>'Đế đen',
-                'price'=>168.000,
-                'img_ulr'=>'./assets/img/dn5den.jpg',
-                'quantity'=>30
-            ],
-            [
-                'product_id'=>23,
-                'size'=>33,
-                'color'=>'Đế Trắng',
-                'price'=>178.000,
-                'img_ulr'=>'./assets/img/dn5trang.jpg',
-                'quantity'=>30
-            ],
-            
         ]);
     }
 }

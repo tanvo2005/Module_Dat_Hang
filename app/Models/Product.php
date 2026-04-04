@@ -11,7 +11,7 @@ class Product extends Model
 
     protected $table = 'products';
     protected $primaryKey = 'product_id';
-    public $timestamps = true; 
+    public $timestamps = true;
 
     protected $fillable = [
         'productname',
@@ -31,6 +31,10 @@ class Product extends Model
     {
         //một Product có nhiều ProductVariant
         return $this->hasMany(ProductVariant::class, 'product_id', 'product_id');
+    }
+    public function minPriceVariant()
+    {
+        return $this->hasOne(ProductVariant::class, 'product_id')->orderBy('price', 'asc');
     }
 
     public function createdBy()

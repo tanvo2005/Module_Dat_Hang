@@ -34,7 +34,7 @@ Route::post('/register', [AuthController::class, 'posrtRegister'])->name('posrtR
 // sử lí thêm vào giỏ hàng
 Route::post('/cart/add', [DatHangController::class, 'add'])->name('cart.add')->middleware('auth');
 
-// Routes cho Đặt hàng 
+// Routes cho Đặt hàng
 Route::middleware('auth')->group(function () {
     Route::get('/checkout', [DatHangController::class, 'showCheckout'])->name('checkout.show');
     Route::post('/checkout', [DatHangController::class, 'processCheckout'])->name('checkout.process');
@@ -45,7 +45,7 @@ Route::middleware('auth')->group(function () {
 
 //xử lí giỏ hàng
 Route::middleware('auth')->group(function () {
-    Route::get('/cart', [CartController::class, 'show'])->name('cartDetail'); 
+    Route::get('/cart', [CartController::class, 'show'])->name('cartDetail');
     Route::post('/cart/add', [CartController::class, 'add'])->name('cart.add');
     Route::patch('/cart/update/{cartDetailId}', [CartController::class, 'update'])->name('cart.update');
     Route::delete('/cart/remove/{cartDetailId}', [CartController::class, 'remove'])->name('cart.remove');

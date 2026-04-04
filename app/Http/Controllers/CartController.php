@@ -10,16 +10,17 @@ use App\Models\ProductVariant;
 use Illuminate\Support\Facades\Validator;
 
 class CartController extends Controller
-{
+{ //thêm sp vào giỏ hàng
     public function add(Request $request)
     {
-        
+//Kiểm tra xem dữ liệu gửi lên có hợp lệ không
+//(có tồn tại biến
         $validator = Validator::make($request->all(), [
             'variant_id' => 'required|exists:product_variants,variant_id',
-            'size' => 'required|integer|min:30|max:50', 
+            'size' => 'required',
             'quantity' => 'required|integer|min:1',
         ]);
-
+//Lấy thông tin người dùng đang đăng nhập và các thông tin sản phẩm họ chọ
         if ($validator->fails()) {
             return redirect()->back()->withErrors($validator)->withInput();
         }
@@ -59,7 +60,7 @@ class CartController extends Controller
                 'variant_id' => $variant_id,
                 'size' => $size,
                 'quantity' => $quantity,
-                'unitprice' => $variant->price, 
+                'unitprice' => $variant->price,
             ]);
         }
 
@@ -67,18 +68,18 @@ class CartController extends Controller
         if ($request->has('buy_now')) {
             return redirect()->route('cartDetail')->with('success', 'Đã thêm sản phẩm! Vui lòng thanh toán.');
         }
-        
+
         //Chuyển hướng người dùng trở lại trang trước đó với thông báo thành công
         return redirect()->back()->with('success', 'Đã thêm sản phẩm vào giỏ hàng!');
     }
 
     //trang Giỏ hàng chi tiết
-    public function show()
+    public function show()// hiển thị giỏ hàng
     {
         $user = Auth::user();
         $cart = Cart::where('user_id', $user->id)->where('status', 0) ->with('details.variant.product') ->first();
 
-        return view('Product.cartDetail', compact('cart')); 
+        return view('Product.cartDetail', compact('cart'));
     }
 
     //cập nhật số lượng sản phẩm
@@ -96,8 +97,8 @@ class CartController extends Controller
             ->whereHas('cart', function($query) use ($user) {
                 $query->where('user_id', $user->id)->where('status', 0);
             })
-            ->with('variant') 
-            ->firstOrFail(); 
+            ->with('variant')
+            ->firstOrFail();
 
         //kiểm tra tồn kho
         if ($cartDetail->variant->quantity < $newQuantity) {
@@ -127,7 +128,7 @@ class CartController extends Controller
         ]);
     }
 
-    //xóa một sản phẩm khỏi giỏ hàng 
+    //xóa một sản phẩm khỏi giỏ hàng
     public function remove($cartDetailId)
     {
         $user = Auth::user();
@@ -156,8 +157,8 @@ class CartController extends Controller
         return response()->json([
             'success' => true,
             'message' => 'Đã xóa sản phẩm khỏi giỏ hàng.',
-            'totalPrice' => $totalPrice,      
-            'totalQuantity' => $totalQuantity, 
+            'totalPrice' => $totalPrice,
+            'totalQuantity' => $totalQuantity,
         ]);
     }
 }

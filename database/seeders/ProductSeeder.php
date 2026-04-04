@@ -15,189 +15,185 @@ class ProductSeeder extends Seeder
     {
         DB::table('products')->insert([
             [
-                'productname'=>'GIÀY ĐÁ BÓNG VẢI DỆT TRẮNG CAM DẬP VÂN NHÁM CỰC NHẸ MỀM MỎNG',
-                'description'=>'Đảm bảo tính linh hoạt của đôi chân với kiểu dáng trẻ trung, năng động với thiết kế vô cùng gọn nhẹ, dễ mang, chắc chắn sẽ là đôi giày không thể thiếu mỗi khi ra sân',
+                // id 1 đầm
+                'productname'=>'ĐẦM CHẤM BI DỰ TIỆC TAY CÁNH TIÊN CÚP NGỰC DÁNG NGẮN TẦNG XOÈ PHỐI LƯỚI QUYẾN RŨ',
+                'description'=>'Thiết kế nhẹ nhàng, ngọt ngào,là lựa chọn hoàn hảo cho những buổi dạo phố hay hẹn hò cuối tuần.',
                 'category_id'=> 1,
                 'created_by'=> 1,
                 'update_by'=> 1
             ],
             [
-                'productname'=>'Giày wika 3 sọc chính hãng tặng tất ( fom bé cần tăng 1 size)',
-                'description'=>'Sản phẩm ( Giày Đá Bóng 3 Sọc Đá Bóng Ct3 Wika Chính Hãng ) Wika đảm bảo về CHẤT LIỆU cũng như HÌNH DÁNG, đầy đủ tem, mác, bao bì . Luôn tuân thủ đúng các quy trình quản lý chất lượng, đảm bảo chất lượng sản phẩm.',
+                //id 2 đầm
+                'productname'=>'Đầm lụa Yếm dáng dài ko dây kéo, lụa cao cấp Tô Châu',
+                'description'=>'Chất liệu lụa cao cấp, sản phẩm có độ bóng, mềm mại và thoáng mát, giúp người mặc cảm thấy thoải mái và sang trọng.',
                 'category_id'=> 1,
                 'created_by'=> 1,
                 'update_by'=> 1
             ],
             [
-                'productname'=>'giày đá bóng nam [ chọn size lấy lên thêm 1 size ] giày đá bóng sân cỏ nhân tạo, đã khâu full đế',
-                'description'=>'Sản phẩm giày đá bóng nam giày đá bóng sân cỏ nhân tạo, đã khâu full đế',
+                //id 3 đầm
+                'productname'=>'Đầm Dáng Dài 2 Dây Ren Hoa 3D Phối Lưới Dáng Xoè Trang Nhã ',
+                'description'=>'Đầm Dáng Dài 2 Dây Ren Hoa 3D Phối Lưới Dáng Xoè là mẫu được YM thiết kế và chụp mẫu thực tế. Form chuẩn, tôn dáng, chất vải dày mịn giúp đứng form sang trọng. Outfit phù hợp đi làm, đi chơi hay dự tiệc đều thanh lịch và cuốn hút',
                 'category_id'=> 1,
                 'created_by'=> 1,
                 'update_by'=> 1
             ],
             [
-                'productname'=>'GIÀY ĐÁ BÓNG PK25 CỰC NHẸ MỀM MỎNG CỔ CHUN ÔM CHÂN',
-                'description'=>'Đảm bảo tính linh hoạt của đôi chân với kiểu dáng trẻ trung, năng động với thiết kế vô cùng gọn nhẹ, dễ mang, chắc chắn sẽ là đôi giày không thể thiếu mỗi khi ra sân',
+                //id 4 đầm
+                'productname'=>'Đầm váy nữ basic BIGSIZE Banamo Fashion cổ sơ mi cài cúc chiết eo lưng chun cộc tay nhiều màu',
+                'description'=>'phù hợp cuối tuần dạo phố cùng người yêu',
                 'category_id'=> 1,
                 'created_by'=> 1,
                 'update_by'=> 1
             ],
             [
-                'productname'=>'Giày wika galaxy chính hãng',
-                'description'=>'Giày chính hãng có tem mác đầy đủ có thể check  Giày được làm bằng công nghệ da mới mỷcrofiber êm chân cảm giác bóng tốt Được tặng kèm tất và đã khâu full đế ạ',
+                //id 5 đầm
+                'productname'=>'Đầm cổ yếm bí cột dây hở lưng dáng phồng tơ phối ren kim sa lấp lánh dáng ngắn xoè , có quần bảo hộ',
+                'description'=>'Thiết kế yếm cổ sang trọng, điểm nhấn cột dây hở lưng quyến rũ',
                 'category_id'=> 1,
                 'created_by'=> 1,
                 'update_by'=> 1
             ],
+
+            // váy
             [
-                'productname'=>'GIÀY ĐÁ BÓNG GIÁ HỌC SINH MÀU CỰC ĐẸP',
-                'description'=>'Vải dệt phủ keo dập vân nhám toàn bộ form giày ,Khâu full đế(đánh rãnh khâu chìm),Kiểu dáng gọn gàng thoát chân',
-                'category_id'=> 1,
-                'created_by'=> 1,
-                'update_by'=> 1
-            ],
-            [
-                'productname'=>'Giày bóng đá VN Waka Fly Vapor 16 Cổ Chun, giày đá banh cỏ nhân tạo - 2EVSHOP',
-                'description'=>'Bề mặt sản phẩm được làm bằng TPU cao cấp tạo độ bền chắc chắn, chống gãy, thuận tiện khi vệ sinh hoặc lau chùi giày. ',
-                'category_id'=> 1,
-                'created_by'=> 1,
-                'update_by'=> 1
-            ],
-            [
-                'productname'=>'Giày đá bóng TẶNG TẤT KHỬ MÙI,giày đá banh nam nữ,giày bóng đá trẻ e đến người lớn',
-                'description'=>'Đôi giày lý tưởng cho sân cỏ nhân tạo và đá phủi. Đã được may full đế, đảm bảo độ bền và thoải mái. Đế cao su cuốn tròn giúp bám sân cực kỳ tốt',
-                'category_id'=> 1,
-                'created_by'=> 1,
-                'update_by'=> 1
-            ],
-            [
-                'productname'=>'Giày đá banh đá bóng thể thao Wika Ultra 5 cao cấp chính hãng giá rẻ size 32-44 trẻ em người lớn nam nữ sân cỏ nhân tạo',
-                'description'=>'Upper chất liệu da nhăn cao cấp, bền bỉ, chống thấm Đường khâu mũi giày chắc chắn, tăng ma sát với bóng Cổ giày mềm êm, ôm chân',
-                'category_id'=> 1,
-                'created_by'=> 1,
-                'update_by'=> 1
-            ],
-            [
-                'productname'=>'Giày Bóng Đá 3 Sọc - Chất da PU cao cấp chống thấm + Tặng [ Tất Dệt Kim + Băng cuốn cổ chân ]',
-                'description'=>'Mặt đế được bố trí với vô số gai nhỏ giúp bám sàn cực kì tốt, chống trơn trượt cao, giúp người chơi di chuyển thoải mái chủ động kiểm soát bóng',
-                'category_id'=> 1,
-                'created_by'=> 1,
-                'update_by'=> 1
-            ],
-            // sandanl
-            [
-                'productname'=>'Giày sandal Buenas Signature 6879 - dép quai hậu nam nữ unisex đi học quai ngang đế cao 4cm',
-                'description'=>'Giày Sandal nam nữ unisex đi học Buenas SD6879 thuộc dòng sản phẩm đầu tay Sandal Sport của thương hiệu Buenas. ',
+                //id 6 vay
+                'productname'=>'Váy bồng xoè dáng bí thường mặc dáng ngắn đính nơ tay bồng kèm quần bảo hộ',
+                'description'=>'Thiết kế bồng xoè dáng bí giúp che khuyết điểm vòng 2, tôn dáng thon gọn',
                 'category_id'=> 2,
                 'created_by'=> 1,
                 'update_by'=> 1
             ],
 
             [
-                'productname'=>'Giày Sandal Nam Thể Thao Genki Quai Hậu Trẻ Trung Đen Trắng GK271',
-                'description'=>'“New Generation New Style”  - bộ sưu tập mới nhất của Genki sẽ thổi 1 làn gió mới đến sandal dành cho giới trẻ, đặc biệt là thế hệ GenZ. ',
+                //id 7 váy
+                'productname'=>'Váy babydoll dáng suông dài tay Dilyshop thiết kế tay bồng tiểu chất kaki hàn mềm mịn',
+                'description'=>'Váy có thể mặc trong nhiều dịp, từ đi chơi, dạo phố đến dự tiệc, hẹn hò',
                 'category_id'=> 2,
                 'created_by'=> 1,
                 'update_by'=> 1
             ],
 
             [
-                'productname'=>'Sandal nam, dép quai hậu nam, sandal học sinh đế mềm êm siêu bền, giày dép xăng đan 2 quai siêu hót trend, GiàY DéP',
-                'description'=>'Sandal nam với thiết kế cực đỉnh, đế độn cao, cực tinh tế, với các đường nét, phối chi tiết sắc nét, bền đẹp- chuẩn form lên dáng cực đẹp, cực nhẹ, cực êm, cực cool.',
+                //id8 váy
+                'productname'=>'Váy Tiểu Thư Tay Bồng Thắt Eo Đầm Dự Tiệc Dáng Chữ A',
+                'description'=>'Váy xinh thiết kế trẻ trung, nhẹ nhàng nàng có thể mặc trong rất nhiều hoàn cảnh nhé',
                 'category_id'=> 2,
                 'created_by'=> 1,
                 'update_by'=> 1
             ],
 
-            // sanhdnah 4 14
+
             [
-                'productname'=>'[Fullbox] Giày Sandal Nam Việt Thủy - Quai Ngang Ghi Xám - VT016',
-                'description'=>'Xin giới thiệu với khách hàng một hãng giày dép Sandal đang được ưa chuộng hiện nay . Đó là hãng Việt Thủy - một thương hiệu giày của Việt Nam.',
+                // id 9 vay
+                'productname'=>'Váy Nữ Woru Thiết Kế Cổ Tròn Tay Bồng, Đầm Ngắn Dáng Xòe Hai Tầng Vintage',
+                'description'=>'Thiết kế tay bồng nhẹ, tạo hiệu ứng vai thon và cực hack dáng nữ tính',
                 'category_id'=> 2,
                 'created_by'=> 1,
                 'update_by'=> 1
             ],
 
-            // sanhdanl5 15
+
             [
-                'productname'=>'Dép Sandal Quai Hậu Nam Nữ Mẫu Mới New2024 Loại Xịn Cao Cấp Loại 1,Kiểu Dáng Thể Thao Siêu Cá Tính,Quai Dán Và Cài Chốt',
-                'description'=>'Mẫu Dép Quai Hậu Đi Học,chơi Mẫu Mới 2024 Hàng Loại 1 Cao Cấp Nhất,Đang Làm mưa làm gió trên thị trường toàn thế giớiiiiiii,Unisex nam nữ đều đi đc ok.',
+                //id 10 váy
+                'productname'=>'Váy Ren Hoa Timi Dáng Xòe Bồng Bềnh, Đầm Nữ Kiểu Dáng 2 Dây Phối Trễ Vai Sang Chảnh',
+                'description'=>'Chiếc váy Timi là lựa chọn không thể thiếu cho nàng yêu phong cách công chúa hiện đại.',
                 'category_id'=> 2,
                 'created_by'=> 1,
                 'update_by'=> 1
             ],
 
-            // sandanl 6 16
+            // áo thun
             [
-                'productname'=>'Dép sandal nữ phong cách Hàn Quốc, quai dán chắc chắn, đế êm nhẹ, chất liệu bền đẹp, phù hợp đi chơi, dạo phố,...',
-                'description'=>'Dép sandal unisex phong cách Hàn Quốc, quai dán chắc chắn, đế êm nhẹ, chất liệu bền đẹp, phù hợp đi chơi, dạo phố, du lịch',
-                'category_id'=> 2,
-                'created_by'=> 1,
-                'update_by'=> 1
-            ],
-
-            // sandanl 7 17
-            [
-                'productname'=>'Giày sandan VN2224 hãng vinasan',
-                'description'=>'Hình sản phẩm do shop tự chụp 99.9% (lệch màu sắc 0.1% do ánh sáng)',
-                'category_id'=> 2,
-                'created_by'=> 1,
-                'update_by'=> 1
-            ],
-
-            // sandanl 8 18
-            [
-                'productname'=>'Dép Sandanl nữ da lộn đế cao 5cm dành cho giới trẻ',
-                'description'=>'Dép sandanl nữ phong cách hiện đại, năng động với thiết kế quai to bản chắc chắn và phần đế cao su dày dặn giúp tăng chiều cao nhẹ nhàng',
-                'category_id'=> 2,
-                'created_by'=> 1,
-                'update_by'=> 1
-            ],
-
-            // dép nam 1 19
-            [
-                'productname'=>'Dép nam chất lượng cao, đế dày chống trượt, khử mùi và chống mài mòn, thiết kế chắc chắn và bền bỉ',
-                'description'=>'Dép nam chất lượng cao, đế dày chống trượt, khử mùi và chống mài mòn, thiết kế chắc chắn và bền bỉ',
+                // id 11
+                'productname'=>'Áo Thun Trơn 100% Cotton Comfitex màu sắc Fabric 240Gsm Form Oversize ',
+                'description'=>'Kiểu dáng: Dáng rộng - Dáng áo rộng rãi',
                 'category_id'=> 3,
                 'created_by'=> 1,
                 'update_by'=> 1
             ],
-
-            // dép nam 2 20
             [
-                'productname'=>'Dép nam đế mềm chống trượt cỡ lớn EVA hai chiều EU: 38-45',
-                'description'=>'Do sự khác biệt về cài đặt ánh sáng và màn hình, màu sắc của sản phẩm có thể hơi khác so với hình ảnh, vui lòng thông cảm.',
+                //id 12
+                'productname'=>'Áo thun trơn form ôm - áo baby tee ôm body chất liệu thun gân co giãn 4 chiều',
+                'description'=>'Mỗi màu áo sẽ có độ dày mỏng khác nhau nhưng vẫn đều là chất thun gân',
                 'category_id'=> 3,
                 'created_by'=> 1,
                 'update_by'=> 1
             ],
-
-            // dép nam 3 21
             [
-                'productname'=>'Dép Nam 2025 Phong Cách Mới Mùa Hè Thường Ngày Thời Trang Ngoài Trời Mặc Chống Trơn Trượt Khử Mùi Đế Dày Thể Thao',
-                'description'=>'Dép nam 2025 Mới Mùa hè Thường mặc bên ngoài Không trơn trượt Khử mùi Đáy dày Phòng tắm tại nhà Kích thước lớn Dép đi biển thể thao và Dép đi trong nhà Nam',
+                // id 13
+                'productname'=>'Áo thun Hello Kitty Ume unisex tay lỡ nữ form rộng',
+                'description'=>'Với chất liệu thun cotton dày mịn được lựa chọn kĩ lưỡng để phù hợp với mọi hoàn cảnh.  ',
                 'category_id'=> 3,
                 'created_by'=> 1,
                 'update_by'=> 1
             ],
-
-            // dép nam 4 22
             [
-                'productname'=>'Dép Nam DATINNOS Da Bò 2 Lớp Chắc Chắn Quai Da Mềm Mại,Đế TPR Độ Bền Cao,Êm Chân',
+                //id 14
+                'productname'=>'Áo Thun Trơn 100% Cotton Comfitex chó con Fabric 240Gsm Form Oversize',
                 'description'=>'Sản phẩm từng đường kim mũi chỉ đều gia công thủ công vô cùng chắc chắn và khéo léo từ những người thợ lành nghề nên đảm bảo sản phẩm chỉnh chu nhất khi đến tay khách hàng.',
                 'category_id'=> 3,
                 'created_by'=> 1,
                 'update_by'=> 1
             ],
-
-            // dép nam 5 23
             [
-                'productname'=>'Dép Quai Ngang Unisex Nam Nữ DATINNOS Kiểu Dáng Basic,Da Lộn Đế PU Màu Đen Trắng-B03',
-                'description'=>'Dép Quai Ngang Unisex Nam Nữ DATINNOS Đế PU Quai Da Lộn Màu Đen Trắng-Hàng Chính Hãng',
+                // id 15
+                'productname'=>'Áo Thun Nữ Cổ Tròn Sọc Dệt Kim Thêu Hình Ngựa Phong Cách Trẻ Trung Hàn Quốc',
+                'description'=>'Phong cách: Thanh lịch, Hàn quốc, Dễ thương',
                 'category_id'=> 3,
                 'created_by'=> 1,
                 'update_by'=> 1
             ],
+            [
+                // id 16
+                'productname'=>'Áo Thun Nữ Dài Tay JUSTDUN A8 Cổ Tròn, Cotton Lông Mịn Dày Dặn, Siêu Co Giãn Mềm Mại, Tôn Dáng',
+                'description'=>'Thiết kế: Dáng ôm body vừa vặn, cổ tròn, tay dài, dễ phối với quần jean, chân váy hoặc khoác ngoài.',
+                'category_id'=> 3,
+                'created_by'=> 1,
+                'update_by'=> 1
+            ],
+            // quần jean
+            [
+                // id 17
+                'productname'=>'Quần jean bò ống suông rộng nữ xuông jeans cạp cao phong cách style Hàn Quốc',
+                'description'=>' Sử dụng đi học, đi làm, đi chơi,...',
+                'category_id'=> 4,
+                'created_by'=> 1,
+                'update_by'=> 1
+            ],
+            [
+                // id 18
+                'productname'=>'Quần jeans xuông ống rộng siêu hót cạp cao',
+                'description'=>'Đặc điểm nổi bật nhất: được làm từ chất liệu vải kaki đẹp , không xù , không co rút , fom dáng chuẩn ko chỉ thừa ',
+                'category_id'=> 4,
+                'created_by'=> 1,
+                'update_by'=> 1
+            ],
+            [
+                // id 19
+                'productname'=>'Quần Ống Loe Jean nữ Lưng cao vải rin bò màu bụi xanh nhạt phủ dơ dáng đứng suông bigsize cạp cao MIAA co giãn 4 chiều',
+                'description'=>'mang lại vẻ trẻ trung, năng động, thoải mái cho bạn nữ trong cả ngày hè và ngày đông.',
+                'category_id'=> 4,
+                'created_by'=> 1,
+                'update_by'=> 1
+            ],
+            [
+                // id 20
+                'productname'=>'Quần KAKI Jeans Ống Rộng Ver 1 WIDE LEG Calem.Club tôn dáng, Quần Jean Nữ Ống Rộng Lưng Cao nhiều màu tôn dáng',
+                'description'=>'Chất liệu: kaki dày dặn, đứng form quần khi mặc, không thô ráp, không co giãn',
+                'category_id'=> 4,
+                'created_by'=> 1,
+                'update_by'=> 1
+            ],
+            [
+                // id 21
+                'productname'=>'Quần jeans trắng ống suông thêu ngựa, jeans nữ cạp cao form suông rộng basic',
+                'description'=>'Phong cách: Basic dễ phối, phù hợp đi học, đi làm, đi chơi, mặc nhà đều đẹp.',
+                'category_id'=> 4,
+                'created_by'=> 1,
+                'update_by'=> 1
+            ],
+
 
 
         ]);

@@ -1,5 +1,5 @@
 @extends('Home.layout')
-@section('title', 'Website Bán Giày Dép')
+@section('title', 'Website AURA-BUTIQUE')
 @section('content')
 
     @include('Home.main')

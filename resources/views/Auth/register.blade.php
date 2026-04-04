@@ -7,7 +7,7 @@
 
         <div class="modal__overlay">
                {{-- #lớP phủ màu đen trong suốt   --}}
-            
+
         </div>
         <div class="modal__body" >
              {{-- # authen form  --}}
@@ -16,14 +16,14 @@
             @endif
             <form action="{{ route('posrtRegister')}}" method="POST" class="auth-form" novalidate>
                 @csrf
-                <div class="auth-form__container"> 
+                <div class="auth-form__container">
                       {{-- #lớP chứa các thành phần riêng  --}}
 
                     <div class="auth-form__header">
                         <h3 class="auth-form__hea--ding">Đăng Kí</h3>
                         <a href="{{route('login')}}" style="text-decoration: none;" class="auth-form__switch-btn">Đăng Nhập</a>
                     </div>
-                    
+
                     <div class="auth-form__form">
                         <div class="auth-form__group">
                             <input type="text" name="name" class="auth-form__input" value="{{ old('name') }}" placeholder="UserName" required>
@@ -79,16 +79,16 @@
                         <span class="auth-form__social-title">
                             Kết nối với Google
                         </span>
-                        
+
                     </a>
                 </div>
 
-            </form> 
+            </form>
 
-             # login form  
+             # login form
 
             {{-- <div class="auth-form">
-                <div class="auth-form__container">    #lớP chứa các thành phần riêng  
+                <div class="auth-form__container">    #lớP chứa các thành phần riêng
 
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng Nhập</h3>
@@ -98,7 +98,7 @@
                     <div class="auth-form__form">
                         <div class="auth-form__group">
                             <input type="text" class="auth-form__input" placeholder="Email của bạn">
-                              #placeholder tạo ra chữ chò ở thẻ input  
+                              #placeholder tạo ra chữ chò ở thẻ input
                         </div>
                         <div class="auth-form__group">
                             <input type="text" class="auth-form__input " placeholder="Nhập mật khẩu">
@@ -109,7 +109,7 @@
                         <div class="auth-form__help">
                             <a href="" class="auth-form__help-link auth-form__help-forgot">Quên Mật Khẩu</a>
                             <span class="auth-form__help-separate">
-                                  tạo vavhj cách ngan  
+                                  tạo vavhj cách ngan
                             </span>
                             <a href="" class="auth-form__help-link ">Cần trợ giúp?</a>
                         </div>
@@ -135,13 +135,13 @@
                         <span class="auth-form__social-title">
                             Kết nối với Google
                         </span>
-                        
+
                     </a>
                 </div>
 
             </div>  --}}
 
-        </div> 
-    </div> 
+        </div>
+    </div>
 
 @endsection
