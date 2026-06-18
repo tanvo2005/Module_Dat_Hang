@@ -16,7 +16,6 @@ return new class extends Migration
             $table->unsignedBigInteger('cart_id');
             $table->foreign('cart_id')->references('cart_id')->on('carts');
             $table->unsignedBigInteger('variant_id');
-            $table->foreign('variant_id')->references('variant_id')->on('product_variants');
             $table->integer('quantity');
             $table->decimal('unitprice', 15, 0);
             $table->timestamps();

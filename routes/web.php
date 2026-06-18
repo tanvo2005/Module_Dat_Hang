@@ -10,10 +10,6 @@ use Faker\Guesser\Name;
 use Illuminate\Container\Attributes\Auth;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::get('/', [ProductController::class , 'index'])->name('index');
 Route::get('/danh-muc/{id}', [ProductController::class, 'show'])->name('category.show');
 Route::get('/san-pham/{id}', [ProductController::class, 'productDetail'])->name('productDetail');
@@ -30,9 +26,6 @@ Route::middleware('auth')->group(function () {
 
 Route::get('/register', [AuthController::class , 'register'])->name('register');
 Route::post('/register', [AuthController::class, 'posrtRegister'])->name('posrtRegister');
-
-// sử lí thêm vào giỏ hàng
-Route::post('/cart/add', [DatHangController::class, 'add'])->name('cart.add')->middleware('auth');
 
 // Routes cho Đặt hàng
 Route::middleware('auth')->group(function () {
@@ -56,4 +49,3 @@ Route::middleware(['auth', 'kiemTraManager'])->prefix('manager')->name('manager.
     Route::get('/orders', [ManagerController::class, 'listOrders'])->name('orders.index');
     Route::patch('/orders/{id}/update', [ManagerController::class, 'updateOrderStatus'])->name('orders.updateStatus');
 });
-

@@ -38,7 +38,7 @@ class DatHangController extends Controller
         $cart = $user->cart()->with('details.variant.product')->first();
 
         if (!$cart || $cart->details->isEmpty()) {
-            return redirect()->route('homepage')->with('error', 'Giỏ hàng của bạn đang trống.');
+            return redirect()->route('index')->with('error', 'Giỏ hàng của bạn đang trống.');
         }
 
         //tính toán tổng tiền
